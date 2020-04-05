@@ -194,8 +194,8 @@ background-repeat: repeat-x;
 		{
 		var seconds = new Date().getSeconds();
 		var sdegree = seconds * 6;
-		var mins =  parseInt(min);  
-		var hours = parseInt(hr); 
+		var mins =  00+parseInt(min);  
+		var hours = 0+parseInt(hr); 
 		var mdegree = mins * 6;
 		var hdegree = hours * 30 + (mins / 2);
 		var currentTime = 0;
@@ -287,10 +287,8 @@ background-repeat: repeat-x;
 	</div>
 
 
-
-
-	  <form>hour: <input type="text" name="hour" id="hour">
-			min: <input type="text" name="min" id ="min">
+	  <form>hour: <input type="text" name="hour" id="hour" value ="12">
+			min: <input type="text" name="min" id ="min" value ="00">
 		  <input type="button" value="Submit" onclick="setup(document.getElementById('hour').value,document.getElementById('min').value)">
 	  </form>
 
